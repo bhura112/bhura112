@@ -11,3 +11,11 @@
 - :standing_man:  I  enjoy Reading/Learning📖 Coding :desktop_computer: and try to build someting new💡.  
 - 😄 Pronouns: **He/His**
 - ⚡ Fun fact: I love sports and movies ❤️
+
+
+<!--START_SECTION:activity-->
+#
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=bhura112.bhura112)
+
+
+<!--END_SECTION:activity-->
