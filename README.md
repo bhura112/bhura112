@@ -12,9 +12,17 @@
 - 😄 Pronouns: **He/His**
 - ⚡ Fun fact: I love sports and movies ❤️
 
+## 💼 Tech Stack
+
+![C](https://img.shields.io/badge/c-E34F26?style=for-the-badge&logo=c&logoColor=white) ![c++](https://img.shields.io/badge/c++-524141?style=for-the-badge&logo=c++&logoColor=white) ![EMC](https://img.shields.io/badge/Embedded-C-589635?style=for-the-badge&logo=Embedded-C&logoColor=white) ![RTOS](https://img.shields.io/badge/rtos-589635?style=for-the-badge&logo=rtos&logoColor=white) ![linux](https://img.shields.io/badge/linux-985677?style=for-the-badge&logo=linux&logoColor=white) ![Qt](https://img.shields.io/badge/qt-986922?style=for-the-badge&logo=qt&logoColor=white)
+
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/-javascript-F7DF1E?&style=for-the-badge&logo=javascript&logoColor=black) ![CSS](https://img.shields.io/badge/-css3-1572B6?&style=for-the-badge&logo=css3&logoColor=white) ![PHP](https://img.shields.io/badge/-php-869656?&style=for-the-badge&logo=php&logoColor=white) ![MySQL](https://img.shields.io/badge/-mysql-F89658?&style=for-the-badge&logo=mysql&logoColor=white)
+
+![VS Code](https://img.shields.io/badge/-VSCode-007ACC?&style=for-the-badge&logo=visual-studio-code&logoColor=white) ![Git](https://img.shields.io/badge/-Git-F05032?&style=for-the-badge&logo=git&logoColor=white) ![mplabx](https://img.shields.io/badge/mplabx-FF5566?&style=for-the-badge&logo=mplabx&logoColor=white) ![CUBEMX](https://img.shields.io/badge/cubemx-a58632?&style=for-the-badge&logo=cubemx&logoColor=white) ![Keil](https://img.shields.io/badge/keil-b88b52?&style=for-the-badge&logo=keil&logoColor=white)
 
 <!--START_SECTION:activity-->
 #
+
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=bhura112.bhura112)
 
 
