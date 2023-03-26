@@ -6,7 +6,7 @@
 
 
 - 🌱 I’m currently building **community project** in public.
-- 👯 I’m looking to collaborate on **GitHub**.
+- 🤩 I’m looking to collaborate on **GitHub**.
 - 📫 Connect with  me on my socials linked below 💬.
 - :standing_man:  I  enjoy Reading/Learning📖 Coding :desktop_computer: and try to build someting new💡.  
 - 😄 Pronouns: **He/His**
