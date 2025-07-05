@@ -3,70 +3,168 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bhura Malik | Embedded Systems Developer</title>
+  <title>Bhura Malik | Embedded Systems Engineer</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="/favicon.ico" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
   <!-- Header -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+  <header id="site-header" class="bg-transparent transition-all duration-300 shadow-md sticky top-0 z-50">
+    <div class="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center relative">
       <h1 class="text-xl font-bold">Bhura Malik</h1>
-      <nav>
+      <div class="md:hidden">
+        <button id="menu-button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <nav class="hidden md:block">
         <ul class="flex space-x-6">
-          <li><a href="#about" class="hover:text-blue-500">About</a></li>
-          <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
-          <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
-          <li><a href="assets/bhura_resume.docx" class="hover:text-blue-500" download>Download Resume</a></li>
+          <li><a href="#about" class="hover:text-blue-600">About</a></li>
+          <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+          <li><a href="#experience" class="hover:text-blue-600">Experience</a></li>
+          <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
         </ul>
       </nav>
     </div>
+    <div id="navbar-dropdown" class="hidden absolute top-full right-4 mt-2 bg-white shadow-md rounded-lg p-4 w-48 md:hidden">
+      <ul class="space-y-2 text-sm">
+        <li><a href="#about" class="block text-gray-800 hover:text-blue-600">About</a></li>
+        <li><a href="#skills" class="block text-gray-800 hover:text-blue-600">Skills</a></li>
+        <li><a href="#experience" class="block text-gray-800 hover:text-blue-600">Experience</a></li>
+        <li><a href="#projects" class="block text-gray-800 hover:text-blue-600">Projects</a></li>
+        <li><a href="#contact" class="block text-gray-800 hover:text-blue-600">Contact</a></li>
+      </ul>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-20">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-4xl font-bold mb-4">Hi, I'm Bhura Malik</h2>
-      <p class="text-lg mb-6">An Embedded Systems Developer | IoT | Low Power Design | Firmware Engineer</p>
-      <a href="#projects" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-gray-200">View My Work</a>
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-blue-700 to-indigo-900 text-white py-20 text-center">
+    <div class="max-w-screen-xl mx-auto px-4">
+     <img id="profile-pic" src="assets/bhura.jpg" alt="Bhura Malik"
+  class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full border-4 border-blue-500 mx-auto mb-6 transition-all duration-500 ease-in-out opacity-100 scale-100" />
+
+      <h2 class="text-3xl sm:text-4xl font-bold">Hi, I’m Bhura Malik</h2>
+      <p class="text-lg sm:text-xl mt-4">Embedded Systems Engineer | IoT | Firmware | Secure OTA | Zephyr | STM32</p>
+      <a href="#projects"
+  class="inline-flex items-center gap-2 mt-6 bg-white text-blue-600 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-gray-200 transition">
+<svg class="w-6 h-6 text-blue-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+    <path fill="currentColor" d="m18.774 8.245-.892-.893a1.5 1.5 0 0 1-.437-1.052V5.036a2.484 2.484 0 0 0-2.48-2.48H13.7a1.5 1.5 0 0 1-1.052-.438l-.893-.892a2.484 2.484 0 0 0-3.51 0l-.893.892a1.5 1.5 0 0 1-1.052.437H5.036a2.484 2.484 0 0 0-2.48 2.481V6.3a1.5 1.5 0 0 1-.438 1.052l-.892.893a2.484 2.484 0 0 0 0 3.51l.892.893a1.5 1.5 0 0 1 .437 1.052v1.264a2.484 2.484 0 0 0 2.481 2.481H6.3a1.5 1.5 0 0 1 1.052.437l.893.892a2.484 2.484 0 0 0 3.51 0l.893-.892a1.5 1.5 0 0 1 1.052-.437h1.264a2.484 2.484 0 0 0 2.481-2.48V13.7a1.5 1.5 0 0 1 .437-1.052l.892-.893a2.484 2.484 0 0 0 0-3.51Z"></path>
+    <path fill="#fff" d="M8 13a1 1 0 0 1-.707-.293l-2-2a1 1 0 1 1 1.414-1.414l1.42 1.42 5.318-3.545a1 1 0 0 1 1.11 1.664l-6 4A1 1 0 0 1 8 13Z"></path>
+</svg>
+  Explore My Work
+</a>
+
+<a href="assets/bhura_resume.docx" download
+  class="inline-flex items-center gap-2 mt-6 bg-white text-blue-600 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-gray-200 transition">
+ <svg class="w-6 h-6 text-blue-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 18">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 1v11m0 0 4-4m-4 4L4 8m11 4v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3"></path>
+</svg>
+  Download Resume
+</a>
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About -->
   <section id="about" class="py-16">
-    <div class="container mx-auto px-4">
+    <div class="max-w-screen-xl mx-auto px-4">
       <h3 class="text-2xl font-bold mb-4">About Me</h3>
-      <p class="max-w-3xl text-gray-700">I'm an embedded systems developer with 8+ years of experience building low-power IoT products, GSM/GPS-based devices, and real-time applications. I specialize in STM32, Renesas RA, FreeRTOS, peripheral drivers, and backend APIs.</p>
+      <p class="text-gray-700 max-w-3xl">
+        I’m an Embedded Systems Engineer with 8+ years of experience architecting and developing real-time, secure, and scalable firmware for IoT devices and industrial systems. I specialize in STM32, Renesas RA, PIC32, Zephyr, and FreeRTOS. My expertise includes secure OTA, bootloaders, BLE, LoRa, and MQTT with strong compliance to MISRA C and OWASP IoT standards. I’ve also developed automation tools in C#/Qt and worked across the full product lifecycle — from firmware to cloud to web integration.
+      </p>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="bg-gray-200 py-16">
-    <div class="container mx-auto px-4">
-      <h3 class="text-2xl font-bold mb-8">Projects</h3>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white rounded-xl p-4 shadow-md">
-          <h4 class="text-lg font-semibold mb-2">Fire Extinguisher Control Panel</h4>
-          <p class="text-sm">PIC32MX firmware with bug fixes, Modbus support, and IOT modem integration.</p>
+  <!-- Skills -->
+  <section id="skills" class="bg-gray-200 py-16">
+    <div class="max-w-screen-xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-6">Core Skills</h3>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 text-sm">
+        <div>
+          <h4 class="font-semibold text-blue-600 mb-2">Languages</h4>
+          <p>C, Embedded C, C++, Python, Shell, C#, PHP, JavaScript, Assembly</p>
         </div>
-        <div class="bg-white rounded-xl p-4 shadow-md">
-          <h4 class="text-lg font-semibold mb-2">NFC-based Fuel Management</h4>
-          <p class="text-sm">STM32 + NFC-based card system to store fuel data securely in real time.</p>
+        <div>
+          <h4 class="font-semibold text-blue-600 mb-2">Microcontrollers</h4>
+          <p>STM32, RA4/RA6, PIC32, ATmega, Realtek, TI MSP430, Nuvoton</p>
         </div>
-        <div class="bg-white rounded-xl p-4 shadow-md">
-          <h4 class="text-lg font-semibold mb-2">GSM Dot Matrix Display</h4>
-          <p class="text-sm">GSM-controlled displays using REST APIs for real-time text update.</p>
+        <div>
+          <h4 class="font-semibold text-blue-600 mb-2">Protocols</h4>
+          <p>UART, SPI, I2C, BLE, LORA, MQTT, GSM, GPS, CAN, Modbus, Ethernet</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-blue-600 mb-2">Frameworks/RTOS</h4>
+          <p>Zephyr, FreeRTOS, Secure OTA, Multithreading, Event Groups</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-blue-600 mb-2">Security</h4>
+          <p>TLS 1.2, AES-256, X.509, MISRA-C, Cppcheck, OWASP IoT</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-blue-600 mb-2">Tools & DevOps</h4>
+          <p>STM32CubeIDE, Keil, MPLAB X, Qt, OpenSSL, Git, RabbitMQ, NGINX</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Experience -->
+  <section id="experience" class="py-16">
+    <div class="max-w-screen-xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-6">Professional Experience</h3>
+      <div class="space-y-6">
+        <div>
+          <h4 class="text-lg font-semibold">Senior Embedded Engineer – A PAUL Software (2017 – Present)</h4>
+          <ul class="list-disc ml-6 text-gray-700">
+            <li>Architected RTOS-based secure firmware stacks for STM32, PIC32, and RA platforms</li>
+            <li>Led development of secure OTA systems using AES-256 + X.509 certs</li>
+            <li>Built provisioning and testing tools using C#/OpenSSL</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold">Embedded Developer – SCUBE, Noida (2016 – 2017)</h4>
+          <ul class="list-disc ml-6 text-gray-700">
+            <li>Developed metro coin dispensers and IP display controllers (RTD2660)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-gray-100 py-16">
+    <div class="max-w-screen-xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-8">Key Projects</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-xl p-4 shadow-md">
+          <h4 class="text-lg font-semibold mb-2">Wagon Tracker</h4>
+          <p>Hybrid BLE 5.3 + GSM/GNSS tracker with secure OTA, sensor-rich, solar powered.</p>
+        </div>
+        <div class="bg-white rounded-xl p-4 shadow-md">
+          <h4 class="text-lg font-semibold mb-2">FogSafe</h4>
+          <p>Landmark warning system for loco pilots with real-time RTOS syncing.</p>
+        </div>
+        <div class="bg-white rounded-xl p-4 shadow-md">
+          <h4 class="text-lg font-semibold mb-2">16-Port Ethernet Switch</h4>
+          <p>Designed web-configurable PoE switch for railway sensor network deployment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
   <section id="contact" class="py-16">
-    <div class="container mx-auto px-4">
+    <div class="max-w-screen-xl mx-auto px-4">
       <h3 class="text-2xl font-bold mb-4">Contact</h3>
-      <p class="mb-4">Let's build something together! You can reach me at:</p>
-      <ul>
+      <p class="mb-4">Let's connect and build something great.</p>
+      <ul class="space-y-2">
         <li>Email: <a href="mailto:bhura112@gmail.com" class="text-blue-600">bhura112@gmail.com</a></li>
         <li>GitHub: <a href="https://github.com/bhura112" class="text-blue-600">github.com/bhura112</a></li>
         <li>LinkedIn: <a href="https://linkedin.com/in/bhura112" class="text-blue-600">linkedin.com/in/bhura112</a></li>
@@ -78,6 +176,45 @@
   <footer class="bg-white text-center py-6 border-t">
     <p class="text-sm text-gray-600">&copy; 2025 Bhura Malik. All rights reserved.</p>
   </footer>
+
+  <script>
+  window.addEventListener("scroll", function () {
+    const header = document.getElementById("site-header");
+    if (window.scrollY > 10) {
+      header.classList.add("bg-white", "shadow-md");
+    } else {
+      header.classList.remove("bg-white", "shadow-md");
+    }
+  });
+</script>
+
+  <script>
+  const images = ["assets/bhura.jpg", "assets/bhura1.jpg"]; //, "assets/bhura2.jpg"
+  const imgElement = document.getElementById("profile-pic");
+  let index = 0;
+
+  setInterval(() => {
+    // Step 1: Fade out + scale down
+    imgElement.classList.remove("opacity-100", "scale-100");
+    imgElement.classList.add("opacity-0", "scale-95");
+
+    setTimeout(() => {
+      // Step 2: Change image
+      index = (index + 1) % images.length;
+      imgElement.src = images[index];
+
+      // Step 3: Fade in + scale up
+      imgElement.classList.remove("opacity-0", "scale-95");
+      imgElement.classList.add("opacity-100", "scale-100");
+    }, 400); // matches transition duration
+  }, 2000); // every 2 seconds
+</script>
+
+
+  <script>
+    const btn = document.getElementById('menu-button');
+    const menu = document.getElementById('navbar-dropdown');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
 </body>
 </html>
-o,
